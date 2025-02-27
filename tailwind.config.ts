@@ -61,6 +61,32 @@ export default {
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },
+      keyframes: {
+        "card-1": {
+          "0%, 100%": {
+            transform: "rotate(-2deg) translateY(-2px)",
+            opacity: "0.8",
+          } as const,
+          "50%": {
+            transform: "rotate(0deg) translateY(2px)",
+            opacity: "0.6",
+          } as const,
+        },
+        "card-2": {
+          "0%, 100%": {
+            transform: "rotate(2deg) translateY(2px)",
+            opacity: "0.6",
+          } as const,
+          "50%": {
+            transform: "rotate(0deg) translateY(-2px)",
+            opacity: "0.8",
+          } as const,
+        },
+      },
+      animation: {
+        "card-1": "card-1 3s ease-in-out infinite",
+        "card-2": "card-2 3s ease-in-out infinite",
+      },
     },
   },
   plugins: [require("tailwindcss-animate")],

@@ -11,10 +11,10 @@ import ModeToggle from "@/components/ModeToggle";
 import { Button } from "@/components/ui/button";
 const Navbar = () => {
   return (
-    <Card className="bg-card border-0 px-4 py-3">
-      <div className="container mx-auto flex items-center justify-between">
+    <header className="top-0 z-50 bg-background/30 backdrop-blur-sm py-3">
+      <div className="flex items-center justify-between">
         {/* Logo */}
-        <h1 className="font-bold text-xl">NextFolio Pro</h1>
+        <h1 className="font-bold text-2xl">NextFolio Pro</h1>
 
         {/* Desktop Navigation */}
         <div className="flex items-center gap-6">
@@ -67,7 +67,7 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-    </Card>
+    </header>
   );
 };
 
